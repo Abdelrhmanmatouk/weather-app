@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container p-5">
+      <div
+        class="search d-flex align-items-center justify-content-center w-100"
+      >
+        <input
+          type="text"
+          placeholder="search"
+          class="search-bar"
+          id="search-bar"
+        />
+        <button id="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="cards d-flex align-items-center justify-content-center m-5">
+        <div class="card" id="day1">
+          <div class="weather loading">
+            <div class="d-flex justify-content-between ">
+              <p class="ms-3 p-color pt-3 today fw-bold">${day}</p>
+              <p class="me-3 p-color pt-3 month fw-bold">${month}</p>
+            </div>
+            <h2 class="city" id="city">weather in cairo</h2>
+            <h1 class="temp">40°c</h1>
+            <div class="d-flex align-items-center justify-content-start">
+              <img
+                src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                alt=""
+                class="icon"
+              />
+              <div class="description text-capitalize">sunny</div>
+            </div>
+
+            <div class="hummdity">humidity : 60%</div>
+            <div class="wind">wind speed : 14.8 km/h</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="weather  loading day1 ">
+            <div class="d-flex justify-content-between">
+              <p class="ms-3 p-color pt-3 today day1 fw-bold">${day}</p>
+              <p class="me-3 p-color pt-3 month day1 fw-bold">${month}</p>
+            </div>
+            <h2 class="city day1" id="city">weather in cairo</h2>
+            <h1 class="temp day1">40°c</h1>
+            <div class="d-flex align-items-center justify-content-start">
+              <img
+                src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                alt=""
+                class="icon day1"
+              />
+              <div class="description day1 text-capitalize">sunny</div>
+            </div>
+
+            <div class="hummdity day1">humidity : 60%</div>
+            <div class="wind day1">wind speed : 14.8 km/h</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="weather loading day2">
+            <div class="d-flex justify-content-between">
+              <p class="ms-3 p-color pt-3 today day2 fw-bold">${day}</p>
+              <p class="me-3 p-color pt-3 month day2 fw-bold" >${month}</p>
+            </div>
+            <h2 class="city day2" id="city">weather in cairo</h2>
+            <h1 class="temp day2">40°c</h1>
+            <div class="d-flex align-items-center justify-content-start">
+              <img
+                src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                alt=""
+                class="icon day2"
+              />
+              <div class="description day2 text-capitalize">sunny</div>
+            </div>
+
+            <div class="hummdity day2">humidity : 60%</div>
+            <div class="wind day2">wind speed : 14.8 km/h</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
